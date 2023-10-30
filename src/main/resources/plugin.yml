@@ -5,4 +5,10 @@ api-version: '1.19'
 commands:
   setBirth:
     description: 用这个命令来设定自己的生日吧
-    usage: /setBirth yyyy-MM-dd
+    usage: /setbirth yyyy-MM-dd
+  getGift:
+    description: 用这个命令来获取自己的生日礼物吧
+    usage: /getgift
+  sendGift:
+    description: 用这个命令来给别人一份生日惊喜吧
+    usage: /sendgift <player>

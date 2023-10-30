@@ -23,11 +23,12 @@ public class setBirth implements CommandExecutor {
                 return false;
             }
             try {
-                new PlayerBirth().setBirth(((Player) sender).getUniqueId().toString(),BirthString);
+                PlayerBirth.getInstance().setBirth(((Player) sender).getPlayer(), BirthString);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
         }
+        sender.sendMessage("设置成功！");
         return true;
     }
 }
