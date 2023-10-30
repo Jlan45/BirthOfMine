@@ -1,0 +1,8 @@
+name: BirthOfMine
+version: '${project.version}'
+main: darkflow.birthofmine.BirthOfMine
+api-version: '1.19'
+commands:
+  setBirth:
+    description: 用这个命令来设定自己的生日吧
+    usage: /setBirth yyyy-MM-dd
